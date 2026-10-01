@@ -1,0 +1,42 @@
+# ==============================================================================
+# PrivacyShield .gitignore
+# ==============================================================================
+
+# 編譯產物與二進位執行檔 (可使用 build.bat 重新生成，或自 GitHub Releases 下載)
+*.exe
+*.dll
+*.so
+*.dylib
+*.pdb
+*.ilk
+*.obj
+*.exp
+*.lib
+
+# 建置目錄
+bin/
+obj/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+
+# 執行階段組態與暫存檔 (程式運作時會自動寫入視窗座標、大小與透明度)
+PrivacyShield.ini
+*.ini
+*.log
+
+# Visual Studio / Visual Studio Code 暫存檔案
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows 系統暫存與縮圖檔案
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.stackdump
