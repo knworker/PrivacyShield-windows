@@ -1,4 +1,4 @@
-// PrivacyShield — 隱私遮蔽工具 v2.0
+// PrivacyShield — 隱私遮蔽工具 v2.1
 // 全域快捷鍵 Ctrl+Q 切換遮蔽視窗 ｜ Ctrl+Shift+F 恐慌模式全螢幕遮蔽
 // 編譯: csc /target:winexe /out:PrivacyShield.exe PrivacyShield.cs
 
