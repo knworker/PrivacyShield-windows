@@ -360,6 +360,20 @@ class ShieldForm : Form
 
     public bool IsPanicMode { get { return panicMode; } }
 
+    // 隱藏於 Alt+Tab 與工作檢視 (Win+Tab)
+    protected override CreateParams CreateParams
+    {
+        get
+        {
+            const int WS_EX_TOOLWINDOW = 0x00000080;
+            const int WS_EX_APPWINDOW  = 0x00040000;
+            CreateParams cp = base.CreateParams;
+            cp.ExStyle |= WS_EX_TOOLWINDOW;
+            cp.ExStyle &= ~WS_EX_APPWINDOW;
+            return cp;
+        }
+    }
+
     public ShieldForm()
     {
         FormBorderStyle = FormBorderStyle.None;
